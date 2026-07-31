@@ -23,7 +23,7 @@ maven {
 ```
 
 ```groovy
-implementation "com.gitee.osaiyoyou:ring-native-sdk:1.0.0"
+implementation "com.gitee.osaiyoyou:ring-native-sdk:v1.0.0"
 ```
 
 聚合制品包含 `android/blesdk.aar`，其 POM 同时声明 UTS 插件原有的 AndroidX、EventBus、Material、XXPermissions 和 FileSelector 依赖。
@@ -60,6 +60,6 @@ Pod 包含 `DHBleSDK.framework`、`DHFoundation.framework` 和 `DHUIKit.framewor
    git push origin v1.0.1
    ```
 
-5. 在 JitPack 检查 `com.gitee.osaiyoyou:ring-native-sdk:1.0.1` 构建成功，再同步更新 `uts-ring-sdk` 两端的依赖 tag/版本。
+5. 在 JitPack 检查 `com.gitee.osaiyoyou:ring-native-sdk:v1.0.1` 构建成功，再同步更新 `uts-ring-sdk` 两端的依赖 tag/版本。该仓库的 JitPack Maven 版本保留 Git Tag 的 `v` 前缀。
 
 已发布标签不得删除后重建；需要修正时发布新版本，确保历史构建可重复。
