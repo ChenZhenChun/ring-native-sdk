@@ -4,7 +4,7 @@
 
 ## 版本
 
-- Android JitPack 聚合版本：`v1.0.0`
+- Android JitPack 聚合版本：`v1.0.1`
 - iOS CocoaPods 聚合版本：`v1.0.1`
 - Android 最低版本：API 26
 - iOS 最低版本：iOS 12.0
@@ -24,7 +24,7 @@ maven {
 ```
 
 ```groovy
-implementation "com.github.ChenZhenChun:ring-native-sdk:v1.0.0"
+implementation "com.github.ChenZhenChun:ring-native-sdk:v1.0.1"
 ```
 
 聚合制品包含 `android/blesdk.aar`，其 POM 同时声明 UTS 插件原有的 AndroidX、EventBus、Material、XXPermissions 和 FileSelector 依赖。
