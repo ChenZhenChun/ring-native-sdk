@@ -3,11 +3,11 @@ Pod::Spec.new do |s|
   s.version               = '1.0.0'
   s.summary               = 'Smart ring native SDK binary dependencies.'
   s.description           = 'Binary SDK bundle used by the uts-ring-sdk UTS plugin.'
-  s.homepage              = 'https://gitee.com/osaiyoyou/ring-native-sdk'
+  s.homepage              = 'https://github.com/ChenZhenChun/ring-native-sdk'
   s.license               = { :type => 'Commercial', :text => 'Copyright belongs to the respective SDK owners.' }
   s.author                = { 'ChenZhenChun' => '346891964@qq.com' }
   s.source                = {
-    :git => 'https://gitee.com/osaiyoyou/ring-native-sdk.git',
+    :git => 'https://github.com/ChenZhenChun/ring-native-sdk.git',
     :tag => "v#{s.version}"
   }
   s.platform              = :ios, '12.0'
@@ -29,4 +29,3 @@ Pod::Spec.new do |s|
   ]
   s.libraries             = 'sqlite3', 'z', 'c++'
 end
-
