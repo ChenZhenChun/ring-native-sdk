@@ -54,6 +54,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (BOOL)isConnected;
 /// 设备绑定状态
 + (BOOL)isBinded;
+/// 当前绑定设备UUID
++ (nullable NSString *)currentBindedUUID;
 /// 设置绑定状态
 /// @param isBinded 是否绑定
 + (void)setBindedStatus:(BOOL)isBinded;
@@ -65,11 +67,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 蓝牙连接代理
 @property (nonatomic, weak) id<DHBleConnectDelegate> connectDelegate;
-
-/// SDK 内部自动重连状态。厂商二进制已提供 getter/setter，但旧头文件未声明。
-/// 对外暴露后，宿主在切换设备时可停止遗留的自动重连任务。
+/// SDK内部自动重连状态。宿主切换设备前可设置为NO，停止遗留重连状态。
 @property (nonatomic, assign) BOOL isAutoReconnecting;
-/// SDK 内部自动重连超时定时器。切换设备前必须先失效，避免旧任务再次抢占连接。
+/// SDK内部自动重连超时定时器。宿主切换设备前可主动失效，避免旧任务再次发起连接。
 @property (nonatomic, strong, nullable) NSTimer *reconnectTimeoutTimer;
 
 @end
