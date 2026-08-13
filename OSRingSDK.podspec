@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = 'OSRingSDK'
-  s.version               = '1.0.4'
+  s.version               = '1.0.5'
   s.summary               = 'Smart ring native SDK binary dependencies.'
   s.description           = 'Binary SDK bundle used by the uts-ring-sdk UTS plugin.'
   s.homepage              = 'https://github.com/ChenZhenChun/ring-native-sdk'
