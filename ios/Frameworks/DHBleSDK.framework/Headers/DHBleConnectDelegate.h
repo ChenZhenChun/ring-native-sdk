@@ -34,9 +34,10 @@ typedef NS_ENUM(NSInteger, DHBleDisconnectReason) {
 /// @param deviceFuncModel 设备
 - (void)centralManagerDidFunctionMenu:(DeviceFuncV2Model *)deviceFuncModel peripheral:(DHPeripheralModel *)peripheral;
 
-/// 断开连接
+/// 断开连接（已废弃），请使用 centralManagerDidDisconnectPeripheral:reason:
 /// @param peripheral 设备
-- (void)centralManagerDidDisconnectPeripheral:(CBPeripheral *)peripheral;
+- (void)centralManagerDidDisconnectPeripheral:(CBPeripheral *)peripheral
+    DEPRECATED_MSG_ATTRIBUTE("Use centralManagerDidDisconnectPeripheral:reason: instead.");
 
 /// 断开连接并返回原因。实现该方法后，SDK不再重复调用上面的旧断开回调。
 /// @param peripheral 设备
